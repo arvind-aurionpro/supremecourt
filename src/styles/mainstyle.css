@@ -1,0 +1,613 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.common_text_color{
+  color: #103654;
+}
+.hidden{
+  visibility: hidden;
+}
+.blog-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  background-color: white;
+  box-shadow: 2px 2px white;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.topbar {
+  background-color: #f9f9f9;
+  padding: 0.5rem 0;
+}
+
+.topbar a{
+    color: #0d0d0d;
+    text-decoration: none;
+}
+
+.topbar p{
+    margin-bottom: 0;
+}
+
+.accessibility-links{
+    display: flex;
+    min-width: 480px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.accessibility-links li{
+    list-style: none;
+}
+
+.mysearchbox {
+  border: 2px solid #dededf;
+  width: 50%;
+}
+.searchfiltertxt {
+  position: absolute;
+  top: 0px;
+}
+.after_login_color{
+  color:  #103654 !important;
+}
+
+
+
+.searchfiltertxt a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.carousel-item{
+  margin-top:-1%;
+}
+
+
+.nav-scroller{
+    background-color: #103654;
+}
+
+.nav-scroller a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav_color_hover:hover{
+  color:#FDE9AD;
+}
+
+
+.meetinginfo-box, 
+.noticeinfo-box{
+    border: 1px solid #E9E9E9;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0.5rem auto;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.meetinginfo-box h6, 
+.noticeinfo-box h6{
+    color: #103654;
+}
+.noticeinfo-box ul {
+    padding-left: 0;
+}
+
+.noticeinfo-box ul li{
+    list-style: none;
+    white-space: pre-line;
+    padding-bottom: 8px;
+}
+.custom_container{
+  width:98%;
+  margin-left: 1%;
+  background-color: white;
+}
+
+.base_child{
+  margin-top: 233px;
+}
+.latest_upadte{
+  background-color: rgb(31,106,161);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
+  width: 100%;
+  margin-left:0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+}
+.latest_upadte a{
+  
+  color: white;
+  padding-bottom:5px;
+  font-size: .9em;;
+  
+}
+div.scroll {
+  /* overflow-x: auto;
+  overflow-y: hidden; */
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+.tiles{
+  width:100%;
+  background-color: rgb(231,244,255);
+ 
+
+}
+.tiles_child{
+  text-align: center;
+  padding-bottom: 3px;
+}
+.tile_icon{
+  padding-top:10px
+}
+.tile_text{
+  font-size: 1.2em;
+  transition: all .5s;
+}
+.tile_link{
+  font-size: .8em;
+}
+.react-calendar{
+  background-color: rgb(242,249,252) !important;
+  border: 2px solid rgb(168, 209, 243) !important;
+  box-shadow: 2px 2px 2px lightgray;
+  border-radius: 8px !important; 
+  width: 100% !important;
+}
+
+.leftside_content{
+  border: 1px solid lightgray;
+  padding:12px 8px;
+  height: 266px;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+}
+.leftside_content .row{
+  margin: 0px;
+}
+.date_month{
+  text-align: center;
+  padding:3px 0px 3px 0px;
+}
+.date_bg{
+  background-color: rgb(231,244,255);
+  
+}
+.month_bg{
+  background-color: rgb(31,106,161);
+  color: white;
+}
+
+.footer{
+  background-color: #103654;
+  color: white;
+  padding-top:2%;
+  padding-left:2%;
+  padding-right:2%;
+}
+.footer ol, ul {
+  padding-left: 1rem;
+}
+.footer p {
+ 
+  margin-bottom: .2rem;
+}
+.footer a {
+ color: white;
+ text-decoration: none;
+}
+.footer_end{
+  color: white;
+  padding:2%;
+  background-color: rgb(8,37,60);
+  margin: 0px !important;
+}
+.footer_end p {
+  margin-bottom: .2rem;
+}
+.footer_end a{
+  color: white;
+  text-decoration: none;
+}
+.text_color{
+  color: #6da4d1;
+}
+.digitalindia{
+  top: 0%;
+  right: 2%;
+  width: 10%;
+}
+
+.tiles .tooltiptext {
+
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  left: 8px;
+  
+  padding: 12px 16px;
+  position: absolute;
+  top: -40%;
+ 
+  width: 292px;
+  visibility: hidden;
+  background-color:rgb(253, 251, 251);
+  z-index: 190908;
+  text-align: center;
+  transition: all .5s;
+  
+}
+
+
+
+.tiles:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.tiles:hover .tile_text{
+  font-size: 1.5em;
+}
+.tiles:hover .tiles_child{
+  padding-bottom: 1px;
+}
+
+.drop{
+  color: white !important;
+}
+.drop .dropdown-item{
+  color: black !important;
+}
+.drop:hover {
+  color: white !important;
+}
+
+.social_media{
+  position: fixed;
+  top: 40%;
+  right: 0%;
+  z-index: 9999;
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+
+}
+.chatbot{
+  width: 30%;
+  position: fixed;
+  right: 0%;
+  bottom:0%;
+  z-index: 99999;
+}
+.chatbot_icon{
+  width: 5%;
+  position: fixed;
+  right: 5%;
+  bottom:10%;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.base_nav{
+  margin-top: 192px;
+}
+.base_nav .row{
+  margin: 0px ;
+}
+
+.niclogo{
+  width: 30%;
+}
+.scilogo{
+  width: 62%;
+}
+/* Chief Justice & Judges CSS START Here */
+.left-link-panel, .right-panel{
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #E9E9E9;  
+  box-sizing: border-box;
+}
+
+.right-panel{
+  padding: 1rem 2rem;
+}
+.left-link-panel h4{
+  background-color: #C8E7FF;
+  font-size: 1.1rem;
+  color:#103654;
+  padding: 1rem;
+}
+
+.left-link-panel ul{
+  padding: 0;
+  margin: 0;
+}
+
+.left-link-panel ul li{
+  list-style: none;
+  padding: 0.5rem 1rem 1.2rem;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.left-link-panel ul li a{
+  color:#0D0D0D;
+  text-decoration: none;
+  transition: all .5s;
+}
+.left-link-panel ul li a:hover,
+.left-link-panel ul li a:focus{
+color: #103654;
+}
+.judges-info{
+  margin-bottom: 1rem;
+}
+
+.judges-photos{
+  position: relative;
+  min-width: 264px;
+  min-height: 200px;
+  text-align: center;
+  background: linear-gradient(180deg, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
+  border: 1px solid #F5F5F5;
+  border-radius: 100px 100px 0px 0px;
+  box-sizing: border-box;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.description-txt{
+  box-sizing: border-box;
+  min-width: 264px;
+  min-height: 200px;
+  background: #FFFFFF;
+  border: 2px solid #F5F5F5;
+  border-radius: 0px 0px 23px 0px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.description-txt p:first-child{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+.dob,.doa,.dor{
+  display: block;
+}
+/* Chief Justice & Judges CSS END Here */
+
+
+/* Notice & Circulars CSS STAER Here */
+
+
+.filter_options{
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+/* Notice & Circulars CSS END Here */
+
+
+/* Dashboard CSS STAt Here */
+.dashboard_headeing,.dashboard_content{
+ 
+  margin-top:10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.dashboard_content{
+  width: 98%;
+  margin-left: 1%;
+}
+.judgeicon{
+  width:15%
+}
+.dashboard_tile{
+  border:1px solid lightgray;
+  padding:30px;
+  border-radius: 32px;
+}
+
+.tile_percentage{
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  padding: 20px;
+  width: 25%;
+  border-radius: 48%;
+  background-color: rgba(255, 255, 255, .5);;
+  
+  color: #E3A66E;
+  
+}
+
+
+.dashboard_tile_bg1{
+  background: linear-gradient(180deg, rgba(243, 199, 158, 0.4) 0%, rgba(249, 231, 215, 0.4) 100%);  
+}
+
+.dashboard_tile_bg2{
+  background: linear-gradient(180deg, rgba(144, 205, 231, 0.4) 0%, rgba(201, 231, 244, 0.4) 100%);  
+}
+
+.dashboard_tile_bg3{
+  background: linear-gradient(180deg, rgba(75, 208, 200, 0.4) 0%, rgba(113, 238, 230, 0.4) 100%);
+}
+.dashboard_tile_bg4{
+  background: linear-gradient(180deg, rgba(120, 234, 172, 0.4) 0%, rgba(147, 249, 194, 0.4) 100%);
+  }
+
+.dashboard_tile_bg5{
+  background: linear-gradient(180deg, rgba(238, 173, 239, 0.4) 0%, rgba(248, 204, 249, 0.4) 100%);
+} 
+.dashboard_tile_bg6{
+  background: linear-gradient(180deg, rgba(240, 162, 167, 0.4) 0%, rgba(250, 217, 220, 0.4) 100%);
+}
+/* Dashboard & Circulars CSS END Here */
+
+
+.couselist tr td{
+ border:1px solid lightgray;
+ padding: 10px;
+}
+.couselist tr th{
+  border:1px solid lightgray;
+  padding: 10px;
+ }
+
+.archive_button{
+  border: 1px solid #1F6AA1;
+}
+.couse_list_table table{
+
+  margin-top: 10px !important;
+}
+
+
+
+/* Judge profile & Circulars CSS Start Here */
+.profile-txt{
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+}
+.profile-txt div:first-child{
+border-left: 10px solid #1F6AA1;
+padding-left: 1rem;
+}
+
+.profile-txt h5{
+  border-left: 10px solid #1F6AA1;
+padding-left: 1rem;
+}
+.profile-txt p:first-child{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.noleftbdr{
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+.pleft-23{
+  padding-left: 1.64rem;
+}
+
+/* Judge profile & Circulars CSS END Here */
+
+/* dashboad css start here */
+
+.casecontent{
+border: 2px solid rgb(168, 209, 243);
+border-radius: 8px;
+height: 100%;
+}
+.dashboard_count_tile{
+ 
+  border-radius: 8px;
+
+}
+.dashboard_count_tile p{
+  margin-bottom: 3px;
+}
+
+/* dashboad css end here */
+
+.tiles:hover .tooltip {
+
+  visibility: visible;
+  transform: translateY(-10px);
+  opacity: 1;
+    transition: .3s linear;
+  animation: arvi 1s ease-in-out infinite  alternate;
+  /* visibility: visible; */
+}
+
+@keyframes arvi {
+  0%{
+    transform: translateY(6px); 
+  }
+
+  100%{
+    transform: translateY(1px); 
+  }
+
+}
+
+.after_login a{ 
+  text-decoration: none;
+}
+
+
+.tooltip {
+  visibility: hidden;
+  z-index: 1;
+  opacity: .40;
+  width: 100%;
+  padding: 0px 20px;
+  background: rgba(56, 54, 54, 0.86);
+  position: absolute;
+  top:-40%;
+  left: -0%;
+  border-radius: 9px;
+  font: 16px;
+  transform: translateY(9px);
+  transition: all 0.3s ease-in-out;
+  
+  box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+  text-align: center;
+  color: white;
+}
+
+
+/* tooltip  after*/
+.tooltip::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  
+  border-style: solid;
+  border-width: 12px 12.5px 0 12.5px;
+  border-color: rgba(56, 54, 54, 0.86) transparent transparent transparent;
+
+  position: absolute;
+  left: 40%;
+
+}
+
+.darkmode_color{
+  color: #fff600 !important;
+}
+
+.darkmode_color_bacground{
+  color:white !important;
+  background-color: black !important;
+}
+
+.form-check-input:checked {
+  background-color: #103654;
+  border-color: #103654;
+}
+
+
