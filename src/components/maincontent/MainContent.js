@@ -109,7 +109,7 @@ const MainContent = () => {
                   icon="/img/tile_icons/judes-icon.svg"
                   url="/ChiefJusticeAndJudges"
                   text="Chief Justice & Judges"
-                  tooltipsText="Chief Justice & Judges"
+                  tooltipsText="To know more about Hon'ble chief justice and judges and their profile, Click below !"
                 />
               </div>
               <div className="col-sm-6 pb-3">
@@ -117,7 +117,7 @@ const MainContent = () => {
                   icon="/img/tile_icons/live-streaming-icon.svg"
                   url=""
                   text="Live Streaming"
-                  tooltipsText="Live Streaming"
+                  tooltipsText="To watch court proceedings of Constitution Bench Matters and Ceremonial Bench, Click here !"
                 />
               </div>
               <div className="col-sm-6 ">
@@ -125,15 +125,15 @@ const MainContent = () => {
                   icon="/img/tile_icons/e-commitee-icon.svg"
                   url=""
                   text="e-commitee"
-                  tooltipsText="e-commitee"
+                  tooltipsText="Do u want to redirect yourself to E-committee, Supreme Court of Indian official Website - Click below !"
                 />
               </div>
               <div className="col-sm-6 ">
                 <Tiles
                   icon="/img/tile_icons/e-filling-icon.svg"
                   url=""
-                  text="e-filing & RTI"
-                  tooltipsText="e-filing & RTI"
+                  text="e-filling & RTI"
+                  tooltipsText="Want to E-fill your returns or raise a RTI rquest via Online RTI portal , Click Below !"
                 />
               </div>
             </div>
@@ -144,7 +144,7 @@ const MainContent = () => {
               icon="/img/tile_icons/important-links-icon.svg"
               url=""
               text="Important Links"
-              tooltipsText="Important Links"
+              tooltipsText="If you want to know more about Examination patterns and question papers, Ministry of Law & Justice, SCLSC, Parliament & Constituition of India then Click below !"
             />
           </div>
           <div className="col-sm-4 pb-3">
@@ -152,7 +152,7 @@ const MainContent = () => {
               icon="/img/tile_icons/judges-library-icon.svg"
               url=""
               text="Judges-Library"
-              tooltipsText="Judges-Library"
+              tooltipsText="Do you want to see library brochure,Catalogues, Current Journals & Journal holdings then Click below !"
             />
           </div>
           <div className="col-sm-4 pb-3">
@@ -160,7 +160,7 @@ const MainContent = () => {
               icon="/img/tile_icons/recruitments-icon.svg"
               url=""
               text="Recruitments"
-              tooltipsText="Recruitments"
+              tooltipsText="To view advertisements, Online applications, Results, notices & Admit card for various examinations then click below !"
             />
           </div>
           <div className="col-sm-4 pb-3">
@@ -168,7 +168,7 @@ const MainContent = () => {
               icon="/img/tile_icons/statistics-icon.svg"
               url="/Statistics"
               text="Statistics"
-              tooltipsText="Statistics"
+              tooltipsText="To know about Summary of Types of Matters and pending mataters in SUPREME COURT OF INDIA till date, Click below !"
             />
           </div>
           <div className="col-sm-4 pb-3">
@@ -176,7 +176,7 @@ const MainContent = () => {
               icon="/img/tile_icons/tenders-icon.svg"
               url=""
               text="Tenders"
-              tooltipsText="Tenders"
+              tooltipsText="To view Notice Inviting Tenders , Please click here !"
             />
           </div>
           <div className="col-sm-4 pb-3">
@@ -184,7 +184,7 @@ const MainContent = () => {
               icon="/img/tile_icons/e-visitor-icon.svg"
               url=""
               text="E-visitor Pass"
-              tooltipsText="e-visitor Pass"
+              tooltipsText="Want to get your visitor pass online on single click, Click below !"
             />
           </div>
         </div>
