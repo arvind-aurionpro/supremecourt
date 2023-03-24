@@ -2,23 +2,32 @@ import BasePage from "../../components/basepage/BasePage"
 import CJAJ from "../../components/cjaj/CJAJ";
 import { Link } from "react-router-dom";
 import Pagination from "../../components/pagination/Pagination";
+import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
 const ChiefJusticeAndJudges = () => {
+  const leftLinkData = {
+    header: "Chief Justice & Judges",
+    data: [
+      {
+        url: "",
+        text: "Chief Justice & Judges",
+      },
+      {
+        url: "",
+        text: "Former Chief Justice & Judges",
+      },
+    ]
+  }
     return(
         <>
         <BasePage >
         
         <main className="my-3">
         <div className="container-fluid">
-          <div className="row">
+          <div className="row"> 
             <div className="col-3">
-              <div className="left-link-panel">
-                <h4>Chief Justice & Judges</h4>
-                <span></span>
-                <ul>
-                  <li><a href="#">Chief Justice & Judges</a></li>
-                  <li><a href="#">Former Chief Justice & Judges</a></li>
-                </ul>
-              </div>
+
+            <LeftLinkPanel data={leftLinkData} />
+
             </div>
             <div className="col-9">
               <div className="right-panel">

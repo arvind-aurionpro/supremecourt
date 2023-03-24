@@ -2,6 +2,7 @@ import BasePage from "../../components/basepage/BasePage";
 import TableWithActions from "../../components/table_with_actions/TableWithActions";
 import { Link } from "react-router-dom";
 import Pagination from "../../components/pagination/Pagination";
+import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
 const NoticeAndCirculars = () => {
 
   const data = [
@@ -23,6 +24,22 @@ const NoticeAndCirculars = () => {
     }
     
   ]
+
+
+  const leftLinkData = {
+    header: "Related Links",
+    data: [
+      {
+        url: "",
+        text: "List of Meetings",
+      },
+      {
+        url: "",
+        text: "Notices and Key Highlights",
+      },
+    ]
+  }
+
   return (
     <>
       <BasePage active_nav={7}>
@@ -30,18 +47,7 @@ const NoticeAndCirculars = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-3">
-                <div className="left-link-panel">
-                  <h4>Related Links</h4>
-                  <span></span>
-                  <ul>
-                    <li>
-                      <a href="#">List of Meetings</a>
-                    </li>
-                    <li>
-                      <a href="#">Notices and Key Highlights</a>
-                    </li>
-                  </ul>
-                </div>
+              <LeftLinkPanel data={leftLinkData} />
               </div>
               <div className="col-9">
                 <div className="right-panel">

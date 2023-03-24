@@ -3,8 +3,8 @@ const LeftLinkPanel = (props) => {
   const data = props.data;
   return (
     <>
-      <div className="left-link-panel">
-        <h4>
+      <div className="left-link-panel darkmode">
+        <h4 className="darkmode">
           {data.icon ? (
             <img src={data.icon} style={{ width: "7%" }} alt={data.header} />
           ) : null}
@@ -17,7 +17,7 @@ const LeftLinkPanel = (props) => {
               <>
                 <li key={index}>
                  
-                  <Link href={currentValue.url}>
+                  <Link href={currentValue.url} className={'leftSideLink'}>
                   {currentValue.icon ? (
                     <img src={currentValue.icon} alt={currentValue.text} style={{ width: "7%" }} />
                   ) : null}

@@ -1,9 +1,22 @@
-import { useEffect } from "react";
+
 import BasePage from "../../components/basepage/BasePage";
 import { Link } from "react-router-dom";
 import { darkMode } from "../../utils/functions";
+import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
 const JudgeProfile = () =>{
-
+  const leftLinkData = {
+    header: "Chief Justice & Judges",
+    data: [
+      {
+        url: "",
+        text: "Chief Justice & Judges",
+      },
+      {
+        url: "",
+        text: "Former Chief Justice & Judges",
+      },
+    ]
+  }
     return(
         <>
         <BasePage darkMode = {true}>
@@ -11,15 +24,10 @@ const JudgeProfile = () =>{
         <main className="my-3">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-3">
-              <div className="left-link-panel darkmode">
-                <h4 className="darkmode">Chief Justice &amp; Judges</h4>
-                <span />
-                <ul>
-                  <li><a href="#">Chief Justice &amp; Judges</a></li>
-                  <li><a href="#">Former Chief Justice &amp; Judges</a></li>
-                </ul>
-              </div>
+            <div className="col-3 ">
+
+            <LeftLinkPanel data={leftLinkData} />
+
             </div>
             <div className="col-9">
               <div className="right-panel darkmode">

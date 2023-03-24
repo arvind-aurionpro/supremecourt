@@ -631,4 +631,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   border-color: #103654;
 }
 
+.leftSideLink:hover{
+  color:#0d6efd !important;
+}
 
