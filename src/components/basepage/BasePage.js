@@ -8,7 +8,7 @@ export const  MyContext = createContext();
 const BasePage = (props) => {
   return (
     <>
-      <MyContext.Provider value={{showLogout:props.showlogout,darkMode:props.darkMode}}>
+      <MyContext.Provider value={{showLogout:props.showlogout,darkMode:props.darkMode,active_nav:props.active_nav}}>
         <ChatBot />
         <Header />
         <div className="base_child" id="base_child">{props.children}</div>

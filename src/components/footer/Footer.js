@@ -91,7 +91,7 @@ const Footer = () => {
         
       </div>
       <div className="row footer_end">
-            <div className="col-3">
+            <div className="col-2">
                 <p className="text_color">Content managed by</p>
                 <p>The Supreme Court of India</p>
             </div>
@@ -103,9 +103,13 @@ const Footer = () => {
                 <p className="text_color">Other Links</p>
                 <p><Link to="/">Feedback</Link> | <Link to="">Website polices</Link>  | <Link to="">Help</Link></p>
             </div>
-            <div className="col-3">
-                <p className="text_color">Last Update on</p>
-                <p>13-03-2023</p>
+            <div className="col-2">
+                <p className="text_color">Last Updated on</p>
+                <p>20-03-2023</p>
+            </div>
+            <div className="col-2">
+                <p className="text_color">Total Visitors</p>
+                <p>120000</p>
             </div>
         </div>
     </>

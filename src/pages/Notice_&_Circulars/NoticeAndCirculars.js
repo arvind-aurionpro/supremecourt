@@ -25,7 +25,7 @@ const NoticeAndCirculars = () => {
   ]
   return (
     <>
-      <BasePage >
+      <BasePage active_nav={7}>
         <main className="my-3">
           <div className="container-fluid">
             <div className="row">

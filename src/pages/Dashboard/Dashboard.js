@@ -57,7 +57,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <BasePage showlogout={true}>
+      <BasePage showlogout={true} active_nav={2}>
         <main className="my-3">
           <div className="container-fluid">
             <div className="row">

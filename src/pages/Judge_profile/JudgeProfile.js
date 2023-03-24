@@ -46,21 +46,22 @@ const JudgeProfile = () =>{
                   </div>
                   <div className="col-12 py-5 profile-txt darkmode">
                     <h5>Education</h5>
-                    <p className="pb-3 pleft-23">BA with Honours in Economics from St Stephen's College, New Delhi. LLB from Campus Law Centre, Delhi University.</p>
+
+                    <p className="pb-3 pleft-23"><span className="bullet">&#8226;</span> BA with Honours in Economics from St Stephen's College, New Delhi. LLB from Campus Law Centre, Delhi University.</p>
                     <h5>Qualification</h5>  
-                    <p className="pb-3 pleft-23">Obtained LLM degree and a Doctorate in Juridical Sciences (SJD) from Harvard Law School, USA.</p>
+                    <p className="pb-3 pleft-23"><span className="bullet">&#8226;</span> Obtained LLM degree and a Doctorate in Juridical Sciences (SJD) from Harvard Law School, USA.</p>
                     <h5>Professional Career</h5>    
-                    <p className="pleft-23">Delivered lectures at the Australian National University, Harvard Law School, Yale Law School and the University of Witwatersrand, South Africa. Speaker at conferences organised by bodies of the United Nations including United Nations High Commission on Human Rights, International Labour Organisation and United Nations Environmental Program, the World Bank and Asian Development Bank.</p>
-                    <p className="pleft-23">Visiting Professor at Oklahoma University School of Law, USA.</p>
-                    <p className="pleft-23">Visiting Professor of Comparative Constitutional Law at the University of Mumbai.</p>
-                    <p className="pleft-23">Practised law at the Supreme Court of India and the Bombay High Court.</p>
-                    <p className="pleft-23">Visiting Professor of Comparative Constitutional Law at the University of Mumbai.</p>
-                    <p className="pleft-23">Practised law at the Supreme Court of India and the Bombay High Court.</p>
-                    <p className="pleft-23">Designated as Senior Advocate by the Bombay High Court in June 1998.</p>
-                    <p className="pleft-23">Additional Solicitor General of India from 1998 until appointment as a Judge.</p>
-                    <p className="pleft-23">Judge of the Bombay High Court from 29 March 2000 until appointment as Chief Justice of the Allahabad High Court. Director of Maharashtra Judicial Academy.</p>
-                    <p className="pleft-23">Chief Justice of the Allahabad High Court from 31 October 2013 until appointment to the Supreme Court.</p>
-                    <p className="pleft-23">Appointed Judge of the Supreme Court of India on 13 May 2016.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Delivered lectures at the Australian National University, Harvard Law School, Yale Law School and the University of Witwatersrand, South Africa. Speaker at conferences organised by bodies of the United Nations including United Nations High Commission on Human Rights, International Labour Organisation and United Nations Environmental Program, the World Bank and Asian Development Bank.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Visiting Professor at Oklahoma University School of Law, USA.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Visiting Professor of Comparative Constitutional Law at the University of Mumbai.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Practised law at the Supreme Court of India and the Bombay High Court.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Visiting Professor of Comparative Constitutional Law at the University of Mumbai.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Practised law at the Supreme Court of India and the Bombay High Court.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Designated as Senior Advocate by the Bombay High Court in June 1998.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Additional Solicitor General of India from 1998 until appointment as a Judge.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Judge of the Bombay High Court from 29 March 2000 until appointment as Chief Justice of the Allahabad High Court. Director of Maharashtra Judicial Academy.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Chief Justice of the Allahabad High Court from 31 October 2013 until appointment to the Supreme Court.</p>
+                    <p className="pleft-23"><span className="bullet">&#8226;</span> Appointed Judge of the Supreme Court of India on 13 May 2016.</p>
                   </div>
                 </div>
               </div>

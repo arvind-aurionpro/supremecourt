@@ -8,7 +8,7 @@ const Home = () =>{
 
     return(
         <>
-        <BasePage>
+        <BasePage active_nav={1}>
         <div className="custom_container">
           <Slider />
           <MainContent />

@@ -100,7 +100,7 @@ const CauseList = () => {
 
   return (
     <>
-      <BasePage>
+      <BasePage active_nav={4}>
         <main className="my-3">
           <div className="container-fluid">
             <div className="row">

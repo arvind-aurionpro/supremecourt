@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 const CJAJ = (props) =>{
 
     return(
@@ -21,7 +22,7 @@ const CJAJ = (props) =>{
                         <span className="doa">(DoA) {props.doa}</span>
                         <span className="dor">(DoR) {props.dor}</span>
                       </p>
-                      <p><a href={props.url}>view profile</a></p>
+                      <p><Link to={props.url}>view profile</Link></p>
                     </div>
                   </div>
         </>

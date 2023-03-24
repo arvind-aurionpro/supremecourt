@@ -85,9 +85,17 @@ body {
     text-decoration: none;
 }
 .nav_color_hover:hover{
-  color:#FDE9AD;
+  color:#94D0FF;
 }
 
+.nav_active{
+  color:#103654;
+  background-color: #94D0FF;
+}
+.nav_active:hover{
+  color:black;
+ 
+}
 
 .meetinginfo-box, 
 .noticeinfo-box{

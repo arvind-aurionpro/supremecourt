@@ -3,43 +3,45 @@ import { useContext } from "react";
 import { MyContext } from "../basepage/BasePage";
 const Navigation = () => {
   const isLogout = useContext(MyContext).showLogout || false;
+
+  const active_nav = useContext(MyContext).active_nav
   return (
     <div className="row ">
       <div className="nav-scroller py-3 darkmode">
         <nav className="nav d-flex justify-content-center">
-          <Link className="p-2 ms-2 nav_color_hover" to="/">
+          <Link className= {active_nav==1? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} to="/">
             HOME
           </Link>
 
           {isLogout ? (
             <>
-              <Link className="p-2 ms-2 nav_color_hover" to="/Dashboard">
+              <Link className= {active_nav==2? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} to="/Dashboard">
                 DASHBOARD
               </Link>
             </>
           ) : null}
-          <a className="p-2 ms-2 nav_color_hover" href="#">
+          <a className={active_nav==3? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} href="#">
             COLLEGIUM RESOLUTIONS
           </a>
-          <Link className="p-2 ms-2 nav_color_hover" to="/CauseList">
+          <Link className={active_nav==4? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} to="/CauseList">
             CAUSE LIST
           </Link>
-          <a className="p-2 ms-2 nav_color_hover" href="#">
+          <a className={active_nav==5? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} href="#">
             DAILY ORDERS
           </a>
 
           <ul className="navbar-nav ms-2 drop">
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle hide nav_color_hover"
-                href="#"
+              <Link
+                className={active_nav==6? "nav-link dropdown-toggle hide nav_color_hover nav_active":"nav-link dropdown-toggle hide nav_color_hover"}
+                to=""
                 id="navbarDarkDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="true"
               >
                 JUDGEMENTS
-              </a>
+              </Link>
               <ul
                 className="dropdown-menu dropdown-menu-light hide"
                 aria-labelledby="navbarDarkDropdownMenuLink"
@@ -66,16 +68,16 @@ const Navigation = () => {
 
           <ul className="navbar-nav ms-3 drop">
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle hide nav_color_hover"
-                href="#"
+              <Link
+                className={active_nav==7? "nav-link dropdown-toggle hide nav_color_hover nav_active":"nav-link dropdown-toggle hide nav_color_hover"}
+                to=""
                 id="navbarDarkDropdownMenuLink1"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="true"
               >
                 SUPREME COURT
-              </a>
+              </Link>
               <ul
                 className="dropdown-menu dropdown-menu-light hide"
                 aria-labelledby="navbarDarkDropdownMenuLink1"
@@ -100,18 +102,18 @@ const Navigation = () => {
             </li>
           </ul>
 
-          <a className="p-2 ms-2 nav_color_hover" href="#">
+          <a className={active_nav==8? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} href="#">
             CAVEAT
           </a>
           {isLogout ? (
             <>
-              <Link className="p-2 ms-2 nav_color_hover" to="/">
+              <Link className={active_nav==9? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} to="/">
                 LOGOUT
               </Link>
             </>
           ) : (
             <>
-              <Link className="p-2 ms-2 nav_color_hover" to="/Dashboard">
+              <Link className={active_nav==10? ' p-2 ms-2 nav_color_hover nav_active':" p-2 ms-2 nav_color_hover"} to="/Dashboard">
                 LOGIN
               </Link>
             </>
