@@ -14,7 +14,7 @@ const Navigation = () => {
           {isLogout ? (
             <>
               <Link className="p-2 ms-2 nav_color_hover" to="/Dashboard">
-                Dashboard
+                DASHBOARD
               </Link>
             </>
           ) : null}
