@@ -1,14 +1,18 @@
+import { useEffect } from "react";
 import BasePage from "../../components/basepage/BasePage";
 import StatisticsTile from "../../components/statisticsTile/StatisticsTile";
+import { setwebTitle } from "../../utils/functions";
 const Statistics = ()=>{
-
+  useEffect(()=>{
+    setwebTitle('Statistics')
+  },[])
     return(
         <>
         <BasePage >
 
        <div className="dashboard_content row p-3">
 
-        <div className="col-sm-6"><h6 className="common_text_color">STATISTICS</h6></div>
+        <div className="col-sm-6"><h6 className="common_text_color">Statistics</h6></div>
         <div className="col-sm-6"></div>
         <div className="row mt-4">
 

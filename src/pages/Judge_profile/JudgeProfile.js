@@ -1,9 +1,13 @@
 
 import BasePage from "../../components/basepage/BasePage";
 import { Link } from "react-router-dom";
-import { darkMode } from "../../utils/functions";
+import { darkMode, setwebTitle } from "../../utils/functions";
 import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
+import { useEffect } from "react";
 const JudgeProfile = () =>{
+  useEffect(()=>{
+    setwebTitle('Judges Profile')
+  },[])
   const leftLinkData = {
     header: "Chief Justice & Judges",
     data: [

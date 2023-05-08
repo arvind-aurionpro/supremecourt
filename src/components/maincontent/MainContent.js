@@ -17,7 +17,7 @@ const MainContent = () => {
           <div className="mb-3">
             <ListOfMeeting
               date={date}
-              month={"MAR"}
+              month={"MAY"}
               listText={
                 "It is a long established fact that a reader will be distracted "
               }
@@ -27,7 +27,7 @@ const MainContent = () => {
           <div className="mb-3">
             <ListOfMeeting
               date={date + 1}
-              month={"MAR"}
+              month={"MAY"}
               listText={
                 "It is a long established fact that a reader will be distracted "
               }
@@ -38,7 +38,7 @@ const MainContent = () => {
           <div className="mb-3">
             <ListOfMeeting
               date={date + 2}
-              month={"MAR"}
+              month={"MAY"}
               listText={
                 "It is a long established fact that a reader will be distracted "
               }
@@ -49,7 +49,7 @@ const MainContent = () => {
           <div className="mb-3">
             <ListOfMeeting
               date={date + 3}
-              month={"MAR"}
+              month={"MAY"}
               listText={
                 "It is a long established fact that a reader will be distracted "
               }

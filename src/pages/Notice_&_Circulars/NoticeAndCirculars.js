@@ -3,24 +3,28 @@ import TableWithActions from "../../components/table_with_actions/TableWithActio
 import { Link } from "react-router-dom";
 import Pagination from "../../components/pagination/Pagination";
 import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
+import { useEffect } from "react";
+import { setwebTitle } from "../../utils/functions";
 const NoticeAndCirculars = () => {
-
+  useEffect(()=>{
+    setwebTitle('Notice & Circulars')
+  },[])
   const data = [
     {
       description:'Helpline Numbers of Court Masters/ Court Modarators for 15.03.23',
-      date:'15/mar/2023'
+      date:'15/03/2023'
     },
     {
       description:'Helpline Numbers of Court Masters/ Court Modarators for 15.03.23',
-      date:'16/mar/2023'
+      date:'16/03/2023'
     },
     {
       description:'Helpline Numbers of Court Masters/ Court Modarators for 15.03.23',
-      date:'17/mar/2023'
+      date:'17/03/2023'
     },
     {
       description:'Helpline Numbers of Court Masters/ Court Modarators for 15.03.23',
-      date:'18/mar/2023'
+      date:'18/03/2023'
     }
     
   ]

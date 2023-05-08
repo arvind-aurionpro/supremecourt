@@ -3,7 +3,12 @@ import CJAJ from "../../components/cjaj/CJAJ";
 import { Link } from "react-router-dom";
 import Pagination from "../../components/pagination/Pagination";
 import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
+import { useEffect } from "react";
+import { setwebTitle } from "../../utils/functions";
 const ChiefJusticeAndJudges = () => {
+  useEffect(()=>{
+    setwebTitle('Chief Justice & Judges')
+  },[])
   const leftLinkData = {
     header: "Chief Justice & Judges",
     data: [

@@ -9,6 +9,8 @@ import Statistics from '../../pages/Statistics/Statistics';
 import CauseList from '../../pages/Cause_List/CauseList';
 import Dashboard from '../../pages/Dashboard/Dashboard';
 import JudgeProfile from '../../pages/Judge_profile/JudgeProfile'
+import AccessbilityStatement from '../../pages/Accessbility_statement/AccessbilityStatement';
+import CopyrightPolicy from '../../pages/Copyright_policy/CopyrightPolicy';
 const MainRouter = () =>{
 
     return(
@@ -23,6 +25,8 @@ const MainRouter = () =>{
           <Route exact path="/CauseList" element={<CauseList />}/>
           <Route exact path="/Dashboard" element={<Dashboard />}/>
           <Route exact path="/JudgeProfile1" element={<JudgeProfile />}/>
+          <Route exact path="/accessbilityStatement" element={<AccessbilityStatement />}/>
+          <Route exact path="/copyrightPolicy" element={<CopyrightPolicy />}/>
         </Routes>
         
         </>

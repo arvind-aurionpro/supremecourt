@@ -56,6 +56,18 @@ const Footer = () => {
 
   return (
     <>
+    <div className=" top_footer darkmode" style={{textAlign:'center'}}>
+     <span className=""><Link to="/accessbilityStatement">Accessibility Statement</Link></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Help</a></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Privacy Policy</a></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Hiperlinking Policy</a></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Contact Us</a></span>
+     <span className="">&nbsp;|&nbsp; <Link to="/copyrightPolicy">Copyright Policy</Link></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Careers</a></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Terms & Conditions</a></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Feedback</a></span>
+     <span className="">&nbsp;|&nbsp; <a href="#">Sitemap</a></span>
+    </div>
       <div className="footer darkmode">
         < SocialMedia />
         <div className="row ">
@@ -105,7 +117,7 @@ const Footer = () => {
             </div>
             <div className="col-2">
                 <p className="text_color">Last Updated on</p>
-                <p>20-03-2023</p>
+                <p>02-05-2023</p>
             </div>
             <div className="col-2">
                 <p className="text_color">Total Visitors</p>

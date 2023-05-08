@@ -85,7 +85,7 @@ const Navigation = () => {
               >
                 <li>
                   <Link className="dropdown-item" to="/NoticeAndCirculars">
-                    Notice & circulars under
+                    Notice & circulars
                   </Link>
                 </li>
                 <li>

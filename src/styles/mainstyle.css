@@ -273,7 +273,7 @@ div.scroll {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 .tiles:hover .tile_text{
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .tiles:hover .tiles_child{
   padding-bottom: 1px;
@@ -635,3 +635,13 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   color:#0d6efd !important;
 }
 
+.top_footer{
+  background:rgb(31,106,161);
+  text-align:'center';
+  padding: 5px;
+  color: white;
+}
+.top_footer a{
+text-decoration: none;
+color: white;
+}

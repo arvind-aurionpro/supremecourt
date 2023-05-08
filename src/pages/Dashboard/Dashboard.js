@@ -4,7 +4,12 @@ import Pagination from "../../components/pagination/Pagination";
 import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
 import { Link } from "react-router-dom";
 import Calendar from "react-calendar";
+import { useEffect } from "react";
+import { setwebTitle } from "../../utils/functions";
 const Dashboard = () => {
+  useEffect(()=>{
+    setwebTitle('Dashboard')
+  },[])
   const data = [
     {
       description:

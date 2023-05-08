@@ -3,27 +3,32 @@ import TableWithActions from "../../components/table_with_actions/TableWithActio
 import { Link } from "react-router-dom";
 import Pagination from "../../components/pagination/Pagination";
 import LeftLinkPanel from "../../components/left_link_panel/LeftLinkPanel";
+import { useEffect } from "react";
+import { setwebTitle } from "../../utils/functions";
 const CauseList = () => {
+  useEffect(()=>{
+    setwebTitle('Cause List')
+  },[])
   const data = [
     {
       description:
         "Helpline Numbers of Court Masters/ Court Modarators for 15.03.23",
-      date: "15/mar/2023",
+      date: "15/03/2023",
     },
     {
       description:
         "Helpline Numbers of Court Masters/ Court Modarators for 15.03.23",
-      date: "16/mar/2023",
+      date: "16/03/2023",
     },
     {
       description:
         "Helpline Numbers of Court Masters/ Court Modarators for 15.03.23",
-      date: "17/mar/2023",
+      date: "17/03/2023",
     },
     {
       description:
         "Helpline Numbers of Court Masters/ Court Modarators for 15.03.23",
-      date: "18/mar/2023",
+      date: "18/03/2023",
     },
   ];
 
@@ -278,7 +283,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                               <center />
                             </center>
@@ -288,7 +293,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                             </center>
                           </td>
@@ -299,7 +304,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                             </center>
                           </td>
@@ -309,7 +314,7 @@ const CauseList = () => {
                                 href="#"
                                 
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                             </center>
                           </td>
@@ -318,7 +323,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                             </center>
                           </td>
@@ -327,7 +332,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                             </center>
                           </td>
@@ -338,7 +343,7 @@ const CauseList = () => {
                               <a
                                 href="#" 
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                             </center>
                           </td>
@@ -347,7 +352,7 @@ const CauseList = () => {
                               <a
                                 href="#" 
                               >
-                                17-03-2023
+                                17/03/2023
                               </a>
                             </center>
                           </td>
@@ -358,7 +363,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                20-03-2023
+                                20/03/2023
                               </a>
                               <center />
                             </center>
@@ -368,7 +373,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                20-03-2023
+                                20/03/2023
                               </a>
                               <center />
                             </center>
@@ -378,7 +383,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                20-03-2023
+                                20/03/2023
                               </a>
                             </center>
                           </td>
@@ -389,7 +394,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                20-03-2023
+                                20/03/2023
                               </a>
                             </center>
                           </td>
@@ -399,7 +404,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                20-03-2023
+                                20/03/2023
                               </a>
                             </center>
                           </td>
@@ -408,7 +413,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                20-03-2023
+                                20/03/2023
                               </a>
                             </center>
                           </td>
@@ -419,7 +424,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                20-03-2023
+                                20/03/2023
                               </a>
                             </center>
                           </td>
@@ -432,7 +437,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                21-03-2023
+                                21/03/2023
                               </a>
                               <center />
                             </center>
@@ -445,7 +450,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                21-03-2023
+                                21/03/2023
                               </a>
                             </center>
                           </td>
@@ -455,7 +460,7 @@ const CauseList = () => {
                               <a
                                 href="#" 
                               >
-                                21-03-2023
+                                21/03/2023
                               </a>
                             </center>
                           </td>
@@ -465,7 +470,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                21-03-2023
+                                21/03/2023
                               </a>
                             </center>
                           </td>
@@ -475,7 +480,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                21-03-2023
+                                21/03/2023
                               </a>
                             </center>
                           </td>
@@ -487,39 +492,7 @@ const CauseList = () => {
                               <a
                                 href="#"
                               >
-                                22-03-2023
-                              </a>
-                              <center />
-                            </center>
-                          </td>
-                          <td />
-                          <td />
-                          <td />
-                          <td />
-                          <td />
-                          <td />
-                          <td />
-                          <td />
-                          <td />
-                          <td />
-                          <td>
-                            <center>
-                              <a
-                                href="#"
-                              >
-                                22-03-2023
-                              </a>
-                            </center>
-                          </td>
-                          <td />
-                        </tr>
-                        <tr>
-                          <td>
-                            <center>
-                              <a
-                                href="#" 
-                              >
-                                23-03-2023
+                                22/03/2023
                               </a>
                               <center />
                             </center>
@@ -537,9 +510,41 @@ const CauseList = () => {
                           <td>
                             <center>
                               <a
+                                href="#"
+                              >
+                                22/03/2023
+                              </a>
+                            </center>
+                          </td>
+                          <td />
+                        </tr>
+                        <tr>
+                          <td>
+                            <center>
+                              <a
                                 href="#" 
                               >
-                                23-03-2023
+                                23/03/2023
+                              </a>
+                              <center />
+                            </center>
+                          </td>
+                          <td />
+                          <td />
+                          <td />
+                          <td />
+                          <td />
+                          <td />
+                          <td />
+                          <td />
+                          <td />
+                          <td />
+                          <td>
+                            <center>
+                              <a
+                                href="#" 
+                              >
+                                23/03/2023
                               </a>
                             </center>
                           </td>
@@ -562,7 +567,7 @@ const CauseList = () => {
                               <a
                                 href="#" 
                               >
-                                24-03-2023
+                                24/03/2023
                               </a>
                             </center>
                           </td>

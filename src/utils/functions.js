@@ -101,3 +101,10 @@ export const lightMode = (specificTag)=>{
     element.classList.remove('darkmode_color_bacground')
   });
 }
+
+
+
+export const setwebTitle = (webTitle) =>{
+
+  document.getElementById('title').text = `${webTitle} | Supreme Court`
+}
