@@ -69,7 +69,7 @@ const Footer = () => {
      <span className="">&nbsp;|&nbsp; <a href="#">Sitemap</a></span>
     </div>
       <div className="footer darkmode">
-        < SocialMedia />
+        {/* < SocialMedia /> */}
         <div className="row ">
           <div className="col-3">
             <CommonFooter data={content_1} />
@@ -117,7 +117,7 @@ const Footer = () => {
             </div>
             <div className="col-2">
                 <p className="text_color">Last Updated on</p>
-                <p>02-05-2023</p>
+                <p>02/05/2023</p>
             </div>
             <div className="col-2">
                 <p className="text_color">Total Visitors</p>
