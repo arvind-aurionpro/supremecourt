@@ -31,8 +31,8 @@ const AccessbilityStatement = () => {
                       </h3>
 
                       <div className="contant my-4">
-                        We are committed to ensure that the Ministry of Social
-                        Justice's website is accessible to all users
+                        We are committed to ensure that the Supreme court of india
+                         website is accessible to all users
                         irrespective of device in use, technology or ability. It
                         has been built, with an aim, to provide maximum
                         accessibility and usability to its visitors. As a result
@@ -45,16 +45,18 @@ const AccessbilityStatement = () => {
                         using assistive technologies, such as screen readers and
                         screen magnifiers. We also aim to be standards compliant
                         and follow principles of usability and universal design,
-                        which should help all visitors of this website. This
+                        which should help all visitors of this website.
+                        <br/><br/>
+                        This
                         website is designed using HTML 4.01 Transitional to meet
                         Guidelines for Indian Government Websites and also
                         adheres to level AA of the Web Content Accessibility
-                        Guidelines (WCAG) 2.0 laid down by the World Wide Web
+                        Guidelines 2.0 laid down by the World Wide Web
                         Consortium (W3C). Part of the information in the website
                         is also made available through links to external
                         Websites. External Websites are maintained by the
                         respective departments who are responsible for making
-                        these sites accessible. Ministry of Social Justice is
+                        these sites accessible. Supreme court of india is
                         working towards making its website accessible for
                         persons with disabilities, however currently Portable
                         Document Format (PDF) files are not accessible. In

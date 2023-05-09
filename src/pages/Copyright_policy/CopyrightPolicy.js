@@ -31,8 +31,7 @@ const CopyrightPolicy = () => {
                       </h3>
 
                       <div className="contant my-4">
-                        Material featured on Ministry of Social Justice and
-                        Empowerment (MSJE) site may be reproduced free of charge
+                        Material featured on Supreme court of india site may be reproduced free of charge
                         in any format or media without requiring specific
                         permission. This is subject to the material being
                         reproduced accurately and not being used in a derogatory
