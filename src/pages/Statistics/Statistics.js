@@ -99,7 +99,35 @@ const Statistics = ()=>{
 
 
 
+<div className="bar_chart my-4">
 
+<div className="row my-3 p-3">
+  <div className="col-sm-4">
+  <h6 className="common_text_color ">Data Via Chart</h6>
+
+  </div>
+  <div className="col-sm-6"></div>
+<div className="col-sm-2">
+                <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">
+                          SORT BY
+                        </label>
+                      <select className="form-select">
+                        <option defaultValue={''}>All</option>
+                        <option value={1}>One</option>
+                        <option value={2}>Two</option>
+                        <option value={3}>Three</option>
+                      </select>
+                      </div>
+                </div>
+
+</div>
+
+
+
+
+<img src="/img/bar-chart.svg" style={{width:'99%'}}/>
+</div>
 
 
         </BasePage>

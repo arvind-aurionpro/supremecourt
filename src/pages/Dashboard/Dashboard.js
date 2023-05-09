@@ -14,22 +14,22 @@ const Dashboard = () => {
     {
       description:
         "An overview of the new scheme for automated listing of cases",
-      date: "10/jul/2023",
+      date: "02/05/2023",
     },
     {
       description:
         "NOTICE REGARDING CANCELLATION OF SPECIAL BENCHES IN HONBLE CHIEF JUSTICE COURT AND COURT NO.12 ON 16.03.2023 (THURSDAY) ",
-      date: "16/mar/2023",
+      date: "05/05/2023",
     },
     {
       description:
         "Notice regarding deletion of Chamber Matter listed on 16.3.23 in Court No. 17 (Item No.1710)",
-      date: "17/mar/2023",
+      date: "06/05/2023",
     },
     {
       description:
         "NOTICE REGARDING LISTING OF Writ Petition (Civil) No. 202 of 1995 ON 15.03.2023",
-      date: "18/mar/2023",
+      date: "07/05/2023",
     },
   ];
 
