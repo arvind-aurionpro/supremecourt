@@ -58,26 +58,26 @@ const ChiefJusticeAndJudges = () => {
                 
                 <div className="row">
                   <div className="col-12 col-sm-6 col-md-6 col-xl-4">
-                    <CJAJ img='/img/judges/hon-judges.png' name='Dr. Justice D.Y. Chandrachud' dob='11-11-1959' doa='13-05-2016' dor='10-11-2024' url='/JudgeProfile1'/>
+                    <CJAJ img='/img/judges/hon-judges.png' name='Dr. Justice D.Y. Chandrachud' dob='11/11/1959' doa='13/05/2016' dor='10/11/2024' url='/JudgeProfile1'/>
                    
                   </div>
                   <div className="col-12 col-sm-6 col-md-6 col-xl-4 ">
-                  <CJAJ img='/img/judges/hon-judges2.png' name='Mr. Justice Sanjay Kishan Kaul' dob='26-12-1958' doa='17-02-2017' dor='25-12-2023' url=''/>
+                  <CJAJ img='/img/judges/hon-judges2.png' name='Mr. Justice Sanjay Kishan Kaul' dob='26/12/1958' doa='17/02/2017' dor='25/12/2023' url=''/>
                   </div>
                   <div className="col-12 col-sm-6 col-md-6 col-xl-4 ">
-                  <CJAJ img='/img/judges/hon-judges3.png' name='Mr. Justice K.M. Joseph' dob='17-06-1958' doa='07-08-2018' dor='16-06-2023' url=''/>
+                  <CJAJ img='/img/judges/hon-judges3.png' name='Mr. Justice K.M. Joseph' dob='17/06/1958' doa='07/08/2018' dor='16/06/2023' url=''/>
                   </div>
 
                   <div className="col-12 col-sm-6 col-md-6 col-xl-4 ">
-                  <CJAJ img='/img/judges/hon-judges4.png' name='Mr. Justice Mukeshkumar Rasikbhai Shah' dob='26-12-1958' doa='17-02-2017' dor='25-12-2023' url=''/>
+                  <CJAJ img='/img/judges/hon-judges4.png' name='Mr. Justice Mukeshkumar Rasikbhai Shah' dob='26/12/1958' doa='17/02/2017' dor='25/12/2023' url=''/>
                   </div>
 
                   <div className="col-12 col-sm-6 col-md-6 col-xl-4">
-                  <CJAJ img='/img/judges/hon-judges5.png' name=' Mr. Justice Ajay Rastogi ' dob='26-12-1958' doa='17-02-2017' dor='25-12-2023' url=''/>
+                  <CJAJ img='/img/judges/hon-judges5.png' name=' Mr. Justice Ajay Rastogi ' dob='26/12/1958' doa='17/02/2017' dor='25/12/2023' url=''/>
                   </div>
 
                   <div className="col-12 col-sm-6 col-md-6 col-xl-4">
-                  <CJAJ img='/img/judges/hon-judges6.png' name='Mr. Justice Dinesh Maheshwari ' dob='26-12-1958' doa='17-02-2017' dor='25-12-2023' url=''/>
+                  <CJAJ img='/img/judges/hon-judges6.png' name='Mr. Justice Dinesh Maheshwari ' dob='26/12/1958' doa='17/02/2017' dor='25/12/2023' url=''/>
                   </div>
 
 

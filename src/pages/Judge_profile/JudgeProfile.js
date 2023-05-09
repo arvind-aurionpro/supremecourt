@@ -48,12 +48,12 @@ const JudgeProfile = () =>{
                       <h5 className="noleftbdr">Hon'ble Dr. Justice D.Y. Chandrachud</h5>
                       <p>
                         The Chief Justice of India
-                        <span className="dob"><b>(DoB.)</b> 11-11-1959</span>
+                        <span className="dob"><b>(DoB.)</b> 11/11/1959</span>
                       </p>
                       <p>
                         <b>Term of Office:</b>
-                        <b>(DoA)</b> 13-05-2016
-                        <b>(DoR)</b> 10-11-2024
+                        <b>(DoA)</b> 13/05/2016
+                        <b>(DoR)</b> 10/11/2024
                       </p></div>
                   </div>
                   <div className="col-12 py-5 profile-txt darkmode">
