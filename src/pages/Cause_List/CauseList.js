@@ -173,7 +173,7 @@ const CauseList = () => {
                               Cause List Date
                             </label>
                             <select className="form-select">
-                              <option defaultValue={''}>DD-MM-YYYY</option>
+                              <option defaultValue={''}>DD/MM/YYYY</option>
                               <option value={1}>One</option>
                               <option value={2}>Two</option>
                               <option value={3}>Three</option>
