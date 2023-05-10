@@ -97,7 +97,7 @@ const Footer = () => {
               011-23116400, 23116401, 23116402, 23116403
             </p>
             <div className="position-absolute digitalindia">
-            <img src="/img/india-gov2.png" style={{width:"40%"}}/>&nbsp;&nbsp;
+            <a target='_blank' href="https://www.india.gov.in/"><img src="/img/india-gov2.png" style={{width:"40%"}}/></a>&nbsp;&nbsp;
               <img src="/img/digitalindia.png" style={{width:"50%"}}/>
               </div>
           </div>

@@ -68,7 +68,7 @@ const Header = () => {
                 <a href="#">Skip to main content</a>
               </li>
               <li>
-                <a href="#">
+                <a target = "_blank" href="https://www.meity.gov.in/content/screen-reader-access ">
                   <img  src={'/img/screen-reader-icon.svg'} alt='screen reader' title={"Screen Reader"}/>
                 </a>
               </li>
