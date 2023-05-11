@@ -70,13 +70,13 @@ const Statistics = ()=>{
 
         <div className="row">
           <div className="col-4 col-lg-3">
-          <StatisticsTile myclass = 'dashboard_tile_bg1' number = '879879798' case = 'Civil Cases' isvisible={false}/>
+          <StatisticsTile myclass = 'dashboard_tile_bg1' number = '879879798' case = 'Civil Cases' isvisible={true}/>
           </div>
           <div className="col-4  col-lg-3">
-          <StatisticsTile myclass = 'dashboard_tile_bg2' number = '79879798' case = 'Criminal Casess' isvisible={false}/>
+          <StatisticsTile myclass = 'dashboard_tile_bg2' number = '79879798' case = 'Criminal Casess' isvisible={true}/>
           </div>
           <div className="col-4  col-lg-3">
-          <StatisticsTile myclass = 'dashboard_tile_bg3' number = '875987979855' case = 'Total Cases'isvisible={false}/>
+          <StatisticsTile myclass = 'dashboard_tile_bg3' number = '875987979855' case = 'Total Cases'isvisible={true}/>
           </div>
           <div className="col-4  col-lg-3">
           <StatisticsTile myclass = 'dashboard_tile_bg4' number = '8759879798' case = 'Civil Cases More Than 1 Year'isvisible={true}/>
