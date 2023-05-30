@@ -652,3 +652,24 @@ color: white;
   margin-left: 1%;
   padding: 5px;
 }
+
+.ratings{
+  font-size: 1.3em;
+  color: lightgrey;
+}
+.star{
+  cursor: pointer;
+}
+.attach_file{
+  color: blue;
+  cursor: pointer;
+}
+.submit{
+  background-color:rgb(31,106,161);
+  color:white;
+}
+
+.submit:hover{
+  background-color: rgb(31,106,161);
+  color:white;
+}
