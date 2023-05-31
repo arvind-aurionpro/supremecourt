@@ -12,6 +12,10 @@ import JudgeProfile from '../../pages/Judge_profile/JudgeProfile'
 import AccessbilityStatement from '../../pages/Accessbility_statement/AccessbilityStatement';
 import CopyrightPolicy from '../../pages/Copyright_policy/CopyrightPolicy';
 import FeedBack from '../../pages/Feedback/Feedback';
+import ScHistory from '../../pages/ScHistory/ScHistory';
+import FormerJustices from '../../pages/Former_Justices/FormerJustices';
+import FormerChiefJustices from '../../pages/Former_Chief_Justices/FormerChiefJustices';
+import Constitution from '../../pages/Constitution/Constitution';
 const MainRouter = () =>{
 
     return(
@@ -29,6 +33,12 @@ const MainRouter = () =>{
           <Route exact path="/accessbilityStatement" element={<AccessbilityStatement />}/>
           <Route exact path="/copyrightPolicy" element={<CopyrightPolicy />}/>
           <Route exact path="/feedBack" element={<FeedBack />}/>
+          <Route exact path="/History" element={<ScHistory />}/>
+          <Route exact path="/FormerJustices" element={<FormerJustices />}/>
+          <Route exact path="/FormerChiefJustices" element={<FormerChiefJustices />}/>
+          <Route exact path="/Constitution" element={<Constitution />}/>
+
+          
         </Routes>
         
         </>
