@@ -66,7 +66,9 @@ const ScHistory = () => {
                       On the 28th of January, 1950, two days after India became a Sovereign Democratic Republic, the Supreme Court came into being. The inauguration took place in the Chamber of Princes in the Parliament building which also housed India's Parliament, consisting of the Council of States and the House of the People. It was here, in this Chamber of Princes, that the Federal Court of India had sat for 12 years between 1937 and 1950. This was to be the home of the Supreme Court for years that were to follow until the Supreme Court acquired its own present premises.
                       </p>
                     </div>
-                    <div className="col-sm-4"></div>
+                    <div className="col-sm-4">
+                      <img src='/img/sci-old-building.svg' style={{width:'100%'}}/>
+                    </div>
 
                     <div className="col-sm-12">
                       <p>
