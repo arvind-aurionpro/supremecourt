@@ -5,7 +5,7 @@ const Table = (props) => {
 
   return (
     <>
-      <table className="table table-borderless">
+      <table className="table table-border">
         <thead>
           <tr>
             {
