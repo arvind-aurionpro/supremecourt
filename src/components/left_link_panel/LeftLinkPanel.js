@@ -15,9 +15,9 @@ const LeftLinkPanel = (props) => {
           {data.data.map((currentValue, index) => {
             return (
               <>
-                <li key={index}>
+                <li key={index} className={currentValue.active?'active_route':''}>
                  
-                  <Link href={currentValue.url} className={'leftSideLink'}>
+                  <Link to={currentValue.url} className={'leftSideLink'}>
                   {currentValue.icon ? (
                     <img src={currentValue.icon} alt={currentValue.text} style={{ width: "7%" }} />
                   ) : null}

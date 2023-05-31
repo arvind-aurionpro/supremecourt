@@ -6,10 +6,10 @@ const Footer = () => {
     header: "JUDGES & PROFESSIONALS",
     list: [
       { text: "Assets of Judges", url: "https://main.sci.gov.in/assets-judges" },
-      { text: "Constitution", url: "https://main.sci.gov.in/constitution" },
-      { text: "Former Chief Justices", url: "https://main.sci.gov.in/former-chief-justices" },
-      { text: "Former Justices", url: "https://main.sci.gov.in/former-justices" },
-      { text: "History", url: "https://main.sci.gov.in/history" },
+      { text: "Constitution", url: "/Constitution", ownpage:true},
+      { text: "Former Chief Justices", url: "/FormerChiefJustices", ownpage:true },
+      { text: "Former Justices", url: "/FormerJustices", ownpage:true },
+      { text: "History", url: "/History" , ownpage:true},
       { text: "Jurisdiction", url: "https://main.sci.gov.in/jurisdiction" },
     ],
    
