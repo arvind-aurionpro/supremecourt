@@ -297,7 +297,7 @@ const Feedback = () => {
         }
       }
 
-      fetch("http://220.226.100.106:4002/sci/SCIFeedBackForm", {
+      fetch("https://220.226.100.106:4002/sci/SCIFeedBackForm", {
         method: "POST",
         body: formData,
       })
