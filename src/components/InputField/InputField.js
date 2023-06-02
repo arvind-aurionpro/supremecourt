@@ -1,19 +1,17 @@
 const InputField = (props) => {
-  const { type, placeholder, label } = props;
+  const { type, placeholder, label,onchange,readonly,value} = props;
   return (
     <>
-      {/* <div>
-            <label>{label}</label>
-            <input type={type} placeholder={placeholder}/>
-        </div> */}
+
       <div className="form-group pe-2" >
-        <label for="exampleInputEmail1">{label}</label>
+        <label htmlFor="exampleInputEmail1">{label}</label>
         <input
           type={type}
           className="form-control"
-          id=""
-          
           placeholder={placeholder}
+          onChange = {onchange}
+          readOnly = {readonly?readonly:false}
+          value={value}
         />
       
       </div>

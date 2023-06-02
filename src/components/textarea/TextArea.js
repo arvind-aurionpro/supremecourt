@@ -1,12 +1,12 @@
 const TextArea = (props)=>{
-    const {label} = props
+    const {label, onchange} = props
 
     return(
         <>
        
-        <div class="form-group">
-    <label for="textarea">{label}</label>
-    <textarea class="form-control mt-2" id="textarea" rows="3"></textarea>
+        <div className="form-group">
+    <label htmlFor="textarea">{label}</label>
+    <textarea className="form-control mt-2" id="textarea" rows="3" onChange={onchange}></textarea>
   </div>
         </>
     )

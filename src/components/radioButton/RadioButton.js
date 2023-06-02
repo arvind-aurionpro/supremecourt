@@ -1,5 +1,5 @@
 const RadioButton = (props) => {
-  const { className, rowsData } = props;
+  const { className, rowsData,onchange } = props;
   return (
     <>
       {rowsData.map((data, index) => {
@@ -19,10 +19,12 @@ const RadioButton = (props) => {
                         name={"radio" + index}
                         id={"radio" + index + "" + radioIndex}
                         defaultChecked = {currentRadio.checked}
+                        value={currentRadio.value}
+                        onChange={data.onchange}
                       />
                       <label
                         className="form-check-label"
-                        for={"radio" + index + "" + radioIndex}
+                        htmlFor={"radio" + index + "" + radioIndex}
                       >
                         {currentRadio.label}
                       </label>
