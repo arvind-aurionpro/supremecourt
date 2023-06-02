@@ -163,9 +163,6 @@ const Feedback = () => {
       });
   }, []);
 
-  useEffect(() => {
-    console.log(allstate);
-  });
 
   const rowsData = [
     {
@@ -297,7 +294,7 @@ const Feedback = () => {
         }
       }
 
-      fetch("https://220.226.100.106:4002/sci/SCIFeedBackForm", {
+      fetch("http://220.226.100.106:4002/sci/SCIFeedBackForm", {
         method: "POST",
         body: formData,
       })
@@ -321,7 +318,7 @@ const Feedback = () => {
           setModalMessage(error);
           //console.log(error, "Error uploading files:", error);
         });
-   
+        console.log(allstate);
   };
 
   const handleDelete = (index) => {
