@@ -15,6 +15,7 @@ const RadioButton = (props) => {
                     <div className="form-check">
                       <input
                         className="form-check-input"
+                        style={{cursor:'pointer'}}
                         type="radio"
                         name={"radio" + index}
                         id={"radio" + index + "" + radioIndex}
@@ -25,6 +26,7 @@ const RadioButton = (props) => {
                       <label
                         className="form-check-label"
                         htmlFor={"radio" + index + "" + radioIndex}
+                        style={{cursor:'pointer'}}
                       >
                         {currentRadio.label}
                       </label>

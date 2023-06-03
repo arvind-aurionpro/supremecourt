@@ -284,6 +284,36 @@ const Feedback = () => {
       return;
     }
 
+    const isMobile = (mobile) => {
+      if (mobile.length === 10) {
+        let mobileRegex = /^[6-9]\d{9}$/.test(mobile);
+        return mobileRegex;
+      } else {
+        return false; 
+      }
+    };
+
+    const isEmail = (email) => {
+      return /\S+@\S+\.\S+/.test(email);
+    };
+    
+    if(!isEmail(allstate.email)){
+      setModalError(true);
+      setShow(true);
+      setModalMessage("Please Enter valid email");
+      return;
+    }
+
+    if(!isMobile(allstate.mobile)){
+      setModalError(true);
+      setShow(true);
+      setModalMessage("Please Enter valid mobile number");
+      return;
+    }
+
+ 
+
+
 
     const formData = new FormData();
 
@@ -493,7 +523,7 @@ const Feedback = () => {
                  <i class="fa fa-times position-absolute" aria-hidden="true" style={{top:'0',right:'0',cursor:'pointer',padding:'2px',background:'white'}}></i>
               </div>
              
-              <button ></button>
+              
               </>
               
             
