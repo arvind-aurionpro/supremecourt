@@ -28,7 +28,7 @@ const MultiFileUpload = (props) => {
         style={inputStyle}
         onChange={handleFileChange}
         ref={inputTypeFile}
-        accept="image/png, image/jpeg , image/jpg , .docx, .pdf"
+        accept="image/png, image/jpeg , image/jpg , .doc, .docx, .pdf"
       />
       <span className="attach_file" onClick={() => inputTypeFile.current.click()}>
         <i

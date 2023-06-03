@@ -296,7 +296,7 @@ const Feedback = () => {
     const isEmail = (email) => {
       return /\S+@\S+\.\S+/.test(email);
     };
-    
+
     if(!isEmail(allstate.email)){
       setModalError(true);
       setShow(true);
@@ -503,7 +503,7 @@ const Feedback = () => {
                           </div>
 
                           <div className="mt-3">
-                            Attach document for any input/comments/reference
+                            Attach document for any input/comments/reference (only jpeg, jpg, png, doc, docx, pdf) are allowed
                             <div className="">
                               <MultiFileUpload selectedFiles = {selectedFiles} setSelectedFiles={setSelectedFiles} setShowMore = {setShowMore} showMore = {showMore}/>
                             </div>
