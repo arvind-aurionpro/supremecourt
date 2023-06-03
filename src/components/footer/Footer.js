@@ -1,7 +1,10 @@
 import CommonFooter from "./CommonFooter";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import SocialMedia from "../socialmedia/SocialMedia";
+import FeedBackNav from "../feedbackNav/FeedBackNav";
 const Footer = () => {
+ 
+  const pathname = useLocation().pathname.toLocaleLowerCase()
   const content_1 = {
     header: "JUDGES & PROFESSIONALS",
     list: [
@@ -70,6 +73,10 @@ const Footer = () => {
     </div>
       <div className="footer darkmode">
         {/* < SocialMedia /> */}
+        {
+          pathname != '/feedback'? <FeedBackNav /> :''
+        }
+        
         <div className="row ">
           <div className="col-3">
             <CommonFooter data={content_1} />

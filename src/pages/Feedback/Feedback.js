@@ -7,11 +7,12 @@ import RadioButton from "../../components/radioButton/RadioButton";
 import TextArea from "../../components/textarea/TextArea";
 import MultiFileUpload from "../../components/fileUpload/MultiFileUpload";
 import { GlobalModal } from "../../components/modal/globalModal";
+import { useNavigate } from 'react-router-dom';
 const Feedback = () => {
   useEffect(() => {
     setwebTitle("Feedback");
   }, []);
-
+  const navigate = useNavigate();
  
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [show, setShow] = useState(false);
@@ -265,6 +266,10 @@ const Feedback = () => {
 
   const modalCallBack = () => {
     setShow(false);
+    if(!modalError){
+      navigate("/")
+    }
+    
   };
   const formSubmit = () => {
     if (!allstate.name || !allstate.email || !allstate.mobile) {
@@ -294,6 +299,7 @@ const Feedback = () => {
         }
       }
 
+
       fetch("https://ffts.aurionpro.com:3001/sci/SCIFeedBackForm", {
         method: "POST",
         body: formData,
@@ -319,7 +325,7 @@ const Feedback = () => {
           //console.log(error, "Error uploading files:", error);
         });
         console.log(allstate);
-  };
+   };
 
   const handleDelete = (index) => {
     setSelectedFiles((prevSelectedFiles) => {
