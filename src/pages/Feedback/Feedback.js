@@ -294,7 +294,7 @@ const Feedback = () => {
         }
       }
 
-      fetch("http://220.226.100.106:4002/sci/SCIFeedBackForm", {
+      fetch("https://ffts.aurionpro.com:3001/sci/SCIFeedBackForm", {
         method: "POST",
         body: formData,
       })
