@@ -365,6 +365,7 @@ const Feedback = () => {
                           dispatch({ type: "name", payload: e.target.value })
                         }
                         value={allstate.name}
+                        mandatory = {true}
                       />
                     </div>
                     <div className="col-sm-3">
@@ -385,6 +386,7 @@ const Feedback = () => {
                           dispatch({ type: "email", payload: e.target.value })
                         }
                         value={allstate.email}
+                        mandatory = {true}
                       />
                     </div>
                     <div className="col-sm-3">
@@ -396,6 +398,7 @@ const Feedback = () => {
                           dispatch({ type: "mobile", payload: e.target.value })
                         }
                         value={allstate.mobile}
+                        mandatory = {true}
                       />
                     </div>
                   </div>
