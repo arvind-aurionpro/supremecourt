@@ -23,9 +23,10 @@ const Feedback = () => {
   
   const today = new Date();
 
+  const month = Number(today.getMonth()) + 1
   const initialState = {
     name: "",
-    date: today.getDate() + "/" + today.getMonth() + "/" + today.getFullYear(),
+    date: today.getDate() + "/" + month+ "/" + today.getFullYear(),
     email: "",
     mobile: "",
     ipAddress: "",
