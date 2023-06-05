@@ -273,7 +273,7 @@ const Feedback = () => {
     if (!allstate.name || !allstate.email || !allstate.mobile) {
       setModalError(true);
       setShow(true);
-      setModalMessage("Name, Email, Mobile can not be Null ");
+      setModalMessage("Name, Email and Mobile are required fields");
       return;
     } else if (allstate.demo_image != "" && allstate.demo_image.length > 10) {
       setModalError(true);
