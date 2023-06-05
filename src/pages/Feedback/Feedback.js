@@ -7,26 +7,25 @@ import RadioButton from "../../components/radioButton/RadioButton";
 import TextArea from "../../components/textarea/TextArea";
 import MultiFileUpload from "../../components/fileUpload/MultiFileUpload";
 import { GlobalModal } from "../../components/modal/globalModal";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 const Feedback = () => {
   useEffect(() => {
     setwebTitle("Feedback");
   }, []);
   const navigate = useNavigate();
- 
+
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [show, setShow] = useState(false);
   const [modalError, setModalError] = useState(false);
   const [modalMessage, setModalMessage] = useState(false);
   const [showMore, setShowMore] = useState(false);
 
-  
   const today = new Date();
 
-  const month = Number(today.getMonth()) + 1
+  const month = Number(today.getMonth()) + 1;
   const initialState = {
     name: "",
-    date: today.getDate() + "/" + month+ "/" + today.getFullYear(),
+    date: today.getDate() + "/" + month + "/" + today.getFullYear(),
     email: "",
     mobile: "",
     ipAddress: "",
@@ -165,7 +164,6 @@ const Feedback = () => {
       });
   }, []);
 
-
   const rowsData = [
     {
       label:
@@ -267,10 +265,9 @@ const Feedback = () => {
 
   const modalCallBack = () => {
     setShow(false);
-    if(!modalError){
-      navigate("/")
+    if (!modalError) {
+      navigate("/");
     }
-    
   };
   const formSubmit = () => {
     if (!allstate.name || !allstate.email || !allstate.mobile) {
@@ -278,7 +275,7 @@ const Feedback = () => {
       setShow(true);
       setModalMessage("Name, Email, Mobile can not be Null ");
       return;
-    }else if(allstate.demo_image != '' && allstate.demo_image.length > 10){
+    } else if (allstate.demo_image != "" && allstate.demo_image.length > 10) {
       setModalError(true);
       setShow(true);
       setModalMessage("Maximum 10 files allowed");
@@ -290,7 +287,7 @@ const Feedback = () => {
         let mobileRegex = /^[6-9]\d{9}$/.test(mobile);
         return mobileRegex;
       } else {
-        return false; 
+        return false;
       }
     };
 
@@ -298,65 +295,60 @@ const Feedback = () => {
       return /\S+@\S+\.\S+/.test(email);
     };
 
-    if(!isEmail(allstate.email)){
+    if (!isEmail(allstate.email)) {
       setModalError(true);
       setShow(true);
       setModalMessage("Please Enter valid email");
       return;
     }
 
-    if(!isMobile(allstate.mobile)){
+    if (!isMobile(allstate.mobile)) {
       setModalError(true);
       setShow(true);
       setModalMessage("Please Enter valid mobile number");
       return;
     }
 
- 
-
-
-
     const formData = new FormData();
 
-      if (allstate.demo_image != "") {
-        allstate.demo_image.forEach((file) => {
-          formData.append("demo_image", file);
-        });
+    if (allstate.demo_image != "") {
+      allstate.demo_image.forEach((file) => {
+        formData.append("demo_image", file);
+      });
+    }
+
+    for (let data in allstate) {
+      if (data != "demo_image") {
+        formData.append(data, allstate["" + data]);
       }
+    }
 
-      for (let data in allstate) {
-        if (data != "demo_image") {
-          formData.append(data, allstate["" + data]);
-        }
-      }
-
-
-      fetch("https://ffts.aurionpro.com:3001/sci/SCIFeedBackForm", {
-        method: "POST",
-        body: formData,
+    fetch("https://ffts.aurionpro.com:3001/sci/SCIFeedBackForm", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        return response.json();
       })
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          if (data.status) {
-            setModalError(false);
-            setShow(true);
-            setModalMessage(data.data);
-          } else {
-            setModalError(true);
-            setShow(true);
-            setModalMessage(data.error);
-          }
-        })
-        .catch((error) => {
+      .then((data) => {
+        if (data.status) {
+          setModalError(false);
+          setShow(true);
+          setModalMessage(data.data);
+        } else {
           setModalError(true);
           setShow(true);
-          setModalMessage(error);
-          //console.log(error, "Error uploading files:", error);
-        });
-        console.log(allstate);
-   };
+          setModalMessage(data.error);
+        }
+      })
+      .catch((error) => {
+        setModalError(true);
+        setShow(true);
+        setModalMessage(error);
+        //console.log(error, "Error uploading files:", error);
+      });
+    console.log(allstate);
+  };
 
   const handleDelete = (index) => {
     setSelectedFiles((prevSelectedFiles) => {
@@ -364,7 +356,6 @@ const Feedback = () => {
       updatedFiles.splice(index, 1);
       return updatedFiles;
     });
-
   };
   useEffect(() => {
     dispatch({ type: "demo_image", payload: selectedFiles });
@@ -396,7 +387,7 @@ const Feedback = () => {
                           dispatch({ type: "name", payload: e.target.value })
                         }
                         value={allstate.name}
-                        mandatory = {true}
+                        mandatory={true}
                       />
                     </div>
                     <div className="col-sm-3">
@@ -417,7 +408,7 @@ const Feedback = () => {
                           dispatch({ type: "email", payload: e.target.value })
                         }
                         value={allstate.email}
-                        mandatory = {true}
+                        mandatory={true}
                       />
                     </div>
                     <div className="col-sm-3">
@@ -429,7 +420,7 @@ const Feedback = () => {
                           dispatch({ type: "mobile", payload: e.target.value })
                         }
                         value={allstate.mobile}
-                        mandatory = {true}
+                        mandatory={true}
                       />
                     </div>
                   </div>
@@ -504,34 +495,57 @@ const Feedback = () => {
                           </div>
 
                           <div className="mt-3">
-                            Attach document for any input/comments/reference (only jpeg, jpg, png, doc, docx, pdf) are allowed
+                            Attach document for any input/comments/reference
+                            (only jpeg, jpg, png, doc, docx, pdf) are allowed
                             <div className="">
-                              <MultiFileUpload selectedFiles = {selectedFiles} setSelectedFiles={setSelectedFiles} setShowMore = {setShowMore} showMore = {showMore}/>
+                              <MultiFileUpload
+                                selectedFiles={selectedFiles}
+                                setSelectedFiles={setSelectedFiles}
+                                setShowMore={setShowMore}
+                                showMore={showMore}
+                              />
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="col-sm-12">
-                    {allstate.demo_image.length > 0 && showMore &&(
-        <div>
-         
-            {allstate.demo_image.map((file, index) => (
-              <>
-              <div className='me-1' style={{width:"9%", display:'inline-block',position:'relative'}} onClick={() => handleDelete(index)}>
-
-                 <img src={URL.createObjectURL(file)} alt={file.name} style={{width:'100%'}} />
-                 <i class="fa fa-times position-absolute" aria-hidden="true" style={{top:'0',right:'0',cursor:'pointer',padding:'2px',background:'white'}}></i>
-              </div>
-             
-              
-              </>
-              
-            
-            ))}
-          
-        </div>
-      )}
+                      {allstate.demo_image.length > 0 && showMore && (
+                        <div>
+                          {allstate.demo_image.map((file, index) => (
+                            <>
+                              <div
+                                className="me-1"
+                                style={{
+                                  width: "9%",
+                                  display: "inline-block",
+                                  position: "relative",
+                                  height:'80px',
+                                 
+                                }}
+                                onClick={() => handleDelete(index)}
+                              >
+                                <img
+                                  src={URL.createObjectURL(file)}
+                                  alt={file.name}
+                                  style={{ width: "100%",height:'100%' }}
+                                />
+                                <i
+                                  class="fa fa-times position-absolute"
+                                  aria-hidden="true"
+                                  style={{
+                                    top: "0",
+                                    right: "0",
+                                    cursor: "pointer",
+                                    padding: "2px",
+                                    background: "white",
+                                  }}
+                                ></i>
+                              </div>
+                            </>
+                          ))}
+                        </div>
+                      )}
                     </div>
                     <div className="col-sm-6"></div>
 
